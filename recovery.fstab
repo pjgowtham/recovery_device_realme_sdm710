@@ -17,8 +17,8 @@
 /data          ext4    /dev/block/bootdevice/by-name/userdata                     flags=fileencryption=ice:aes-256-cts
 /firmware      vfat    /dev/block/bootdevice/by-name/modem                        flags=display="Firmware";mounttodecrypt
 /misc          emmc    /dev/block/bootdevice/by-name/misc                         flags=display="Misc"
-/persist        ext4   /dev/block/bootdevice/by-name/persist                      flags=display="Persist";backup=1
-/persist_image  emmc   /dev/block/bootdevice/by-name/persist                      flags=display="Persist Image";backup=1;flashimg=1
+/persist        ext4   /dev/block/bootdevice/by-name/persist                      flags=display="Persist";backup=0
+/persist_image  emmc   /dev/block/bootdevice/by-name/persist                      flags=display="Persist Image";backup=1
 /splash        emmc    /dev/block/bootdevice/by-name/splash                       flags=display="Boot Logo";backup=1;flashimg=1
 
 /modem         emmc    /dev/block/bootdevice/by-name/modem                        flags=backup=1;display="Modem";fsflags=ro
