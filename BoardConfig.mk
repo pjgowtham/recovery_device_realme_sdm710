@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/realme/RMX1921
+DEVICE_PATH := device/realme/realme_sdm710
 
 # Architecture
 TARGET_ARCH := arm64
