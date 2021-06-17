@@ -71,6 +71,8 @@ void load_RMX1901() {
       property_set("ro.product.name", "RMX1901");      
       property_set("ro.product.model", "RMX1901");
       property_set("ro.product.product.model", "RMX1901");
+      property_set("ro.separate.soft", "19605");
+      property_set("ro.vendor.product.device.oem", "RMX1901");
   
 }
 
@@ -81,6 +83,8 @@ void load_RMX1901CN() {
       property_set("ro.product.name", "RMX1901CN");      
       property_set("ro.product.model", "RMX1901");
       property_set("ro.product.product.model", "RMX1901");
+      property_set("ro.separate.soft", "19601");
+      property_set("ro.vendor.product.device.oem", "RMX1901");
 
 }
 void load_RMX1851() {
