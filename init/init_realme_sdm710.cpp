@@ -52,7 +52,8 @@ void load_RMX1921() {
       property_set ("ro.product.name", "RMX1921");
       property_set ("ro.product.model", "RMX1921");      
       property_set ("ro.product.product.model", "RMX1921");
- 
+      property_set("ro.separate.soft", "19651");
+      property_set("ro.vendor.product.device.oem", "RMX1921"); 
 }
 
 void load_RMX1921EU() {
@@ -61,7 +62,9 @@ void load_RMX1921EU() {
       property_set("ro.build.product", "RMX1921EU");
       property_set("ro.product.name", "RMX1921EU");
       property_set("ro.product.model", "RMX1921");
-      property_set("ro.product.product.model", "RMX1921");      
+      property_set("ro.product.product.model", "RMX1921");
+      property_set("ro.separate.soft", "19651");
+      property_set("ro.vendor.product.device.oem", "RMX1921");        
 }
 
 void load_RMX1901() {
