@@ -22,6 +22,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 # Properties
 PRODUCT_PACKAGES += \
     resetprop
+
+# qcom decryption
+PRODUCT_PACKAGES_ENG += \
+    qcom_decrypt \
+    qcom_decrypt_fbe
     
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
