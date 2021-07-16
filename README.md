@@ -5,7 +5,7 @@ Recovery tree for realme sdm710 devices
 
 Works:
 
-- Everything except for screen timeout/lockscreen which is intentionally made not to timeout because of unresponsive touch.
+ - Everything
 
 ## Compile
 
