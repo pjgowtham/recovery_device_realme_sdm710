@@ -17,6 +17,15 @@
 # Release name
 PRODUCT_RELEASE_NAME := realme_sdm710
 
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+
+# Inherit from common AOSP config
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
+
+# Installs gsi keys into ramdisk, to boot a GSI with verified boot.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
+
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
 $(call inherit-product, device/realme/realme_sdm710/device.mk)

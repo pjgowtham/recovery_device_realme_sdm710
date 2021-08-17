@@ -72,7 +72,6 @@ load_RMX1971CN()
       resetprop "ro.separate.soft" "19691"      
       resetprop "ro.vendor.product.device.oem" "RMX1971"      
 }
-		
 
 prjName=$(cat /proc/oppoVersion/prjName)
 echo "Running unifying script with $prjName" >> /tmp/recovery.log
