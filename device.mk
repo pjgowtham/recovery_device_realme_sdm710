@@ -16,9 +16,6 @@
 
 LOCAL_PATH := device/realme/realme_sdm710
 
-# Inherit from common AOSP config
-$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
-
 # Launched with pie
 $(call inherit-product, build/make/target/product/product_launched_with_p.mk)
 
@@ -38,10 +35,6 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libion.so
 
-# Properties
-PRODUCT_PACKAGES += \
-    resetprop
-
 # qcom decryption
 PRODUCT_PACKAGES_ENG += \
     qcom_decrypt \
@@ -50,7 +43,3 @@ PRODUCT_PACKAGES_ENG += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-
-# tzdata
-PRODUCT_PACKAGES_ENG += \
-   tzdata_twrp

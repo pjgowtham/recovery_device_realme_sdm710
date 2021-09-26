@@ -15,6 +15,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_realme_sdm710.mk
+    $(LOCAL_DIR)/twrp_realme_sdm710.mk
     
-COMMON_LUNCH_CHOICES := aosp_realme_sdm710-eng
+COMMON_LUNCH_CHOICES := twrp_realme_sdm710-eng
